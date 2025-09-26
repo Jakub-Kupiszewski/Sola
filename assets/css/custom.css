@@ -1,0 +1,16 @@
+/* custom.css - site overrides
+   This file applies the "Sirenia" font family site-wide.
+   Note: Adobe Fonts requires you to include the kit link in index.html
+   (https://use.typekit.net/YOUR_KIT_ID.css). Once that link is present
+   the following rules will apply Sirenia across the site.
+*/
+
+html, body, input, select, textarea, button {
+  font-family: "Sirenia", "Source Sans Pro", Helvetica, Arial, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-family: "Sirenia", "Source Sans Pro", Helvetica, Arial, sans-serif !important;
+  letter-spacing: 0.02em;
+}
+/* You can add safe overrides here. For now this file only applies the Sirenia font. */
