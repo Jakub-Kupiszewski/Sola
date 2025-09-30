@@ -13,4 +13,39 @@ h1, h2, h3, h4, h5, h6, strong, b {
   font-family: "Sirenia", "Source Sans Pro", Helvetica, Arial, sans-serif !important;
   letter-spacing: 0.02em;
 }
-/* You can add safe overrides here. For now this file only applies the Sirenia font. */
+.panel.color1,
+.panel > .intro.color1,
+.panel > .inner.color1 {
+  background-color: #1C2541 !important;
+}
+
+/* Remove gradient overlay and overlay.png from panels and filtered images */
+.panel > * {
+  background-image: none !important;
+  background-size: auto !important;
+  background-position: initial !important;
+}
+
+.image.filtered:after,
+.image.filtered.tinted:after {
+  background-image: none !important;
+}
+
+/* Remove gap below the banner panel only */
+.panel.banner > .content,
+.panel.banner > .image,
+.panel.banner > .intro,
+.panel.banner > .inner {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Tighten banner headings */
+.panel.banner .major {
+  margin-bottom: 0 !important;
+}
+
+/* Increase spacing between h2.major and the following paragraph inside panels */
+.panel .major + p {
+  margin-top: 2rem !important;
+}
